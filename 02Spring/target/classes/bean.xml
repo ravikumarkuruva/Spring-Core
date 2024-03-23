@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- This is simple configuration -->
+	<bean id="repo1" class="com.app.repo.Respository">
+		<property name="entity" value="ravi"></property>
+	</bean>
+	<bean id="ser" class="com.app.service.Service">
+		<property name="repo" value="repo1"></property>
+	</bean>
+</beans>

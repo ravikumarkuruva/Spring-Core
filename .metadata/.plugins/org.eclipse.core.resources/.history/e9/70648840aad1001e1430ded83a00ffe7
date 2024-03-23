@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>
+			WEB-App-4
+		</title>
+	</head>
+	<body>
+				<h1><u>BooksDetails</u></h1>
+		<p>
+			<span th:text="${l1}"></span>
+		</p>
+	</body>
+</html>

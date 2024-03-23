@@ -1,0 +1,5 @@
+package com.app.runner.config;
+
+public class SwaggerConfig {
+
+}

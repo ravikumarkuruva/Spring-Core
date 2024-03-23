@@ -1,0 +1,29 @@
+package com.app.runners;
+
+import java.util.Arrays;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.app.entity.Student;
+import com.app.repository.StudentRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+			ApplicationContext ac= SpringApplication.run(Application.class, args);
+		StudentRepository repo=ac.getBean(StudentRepository.class);
+		
+		repo.saveAll(Arrays.asList(
+				new Student(101,"Ravi kumar", "192N1A0411", "ECE"),
+				new Student(102,"Rajesh", "192N1A0410", "CIVIL"),
+				new Student(103,"Rani", "192N1A0415", "EEE"),
+				new Student(104,"Ramesh kumar", "192N1A0413", "CSE"),
+				new Student(105,"Ravindra", "192N1A0417", "MECH")
+				));
+		
+	}
+
+}

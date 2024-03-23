@@ -1,0 +1,5 @@
+package com.app.runner.service;
+
+public interface IStudentService {
+
+}

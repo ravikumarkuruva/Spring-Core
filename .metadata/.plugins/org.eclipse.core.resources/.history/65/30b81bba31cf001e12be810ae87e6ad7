@@ -1,0 +1,5 @@
+package com.app.runners.entity;
+
+public class Product {
+
+}

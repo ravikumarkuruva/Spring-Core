@@ -1,0 +1,40 @@
+package com.app.runner.service.impl;
+
+import java.util.List;
+
+import com.app.runner.entity.Patient;
+import com.app.runner.service.IPatientService;
+
+public class PatientServiceImpl implements IPatientService {
+
+	@Override
+	public Integer savePatient(Patient p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void getOnePatient(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updatePatient(Patient p) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Integer deletePatient(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Patient> getAllPatients() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

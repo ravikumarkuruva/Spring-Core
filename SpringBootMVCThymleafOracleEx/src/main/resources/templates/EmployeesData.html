@@ -1,0 +1,31 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<body>
+			<h1><u>Employee Details :--</u></h1>
+			
+			<table border="2">
+				<th>Id</th>
+				<th>Name</th>
+				<th>Dept</th>
+				<th>Salary</th>
+				<th>HRA</th>
+				<th>TA</th>
+				<th>Operations</th>
+				<tr th:each="ob:${list}">
+				<td>[[${ob.empId}]]</td>
+				<td>[[${ob.empName}]]</td>
+				<td>[[${ob.empDept}]]</td>
+				<td>[[${ob.empSal}]]</td>
+				<td>[[${ob.emphra}]]</td>
+				<td>[[${ob.empta}]]</td>
+				<td>
+					<a th:href="@{/employee/delete(id=${ob.empId})}">DELETE</a> | 
+					<a th:href="@{/employee/edit(id=${ob.empId})}">EDIT</a>
+				
+				</td></tr>
+			</table>
+			<p th:text="${message}"></p>
+			<b>[[${message}]]</b>
+		</body>
+	</head>
+</html>

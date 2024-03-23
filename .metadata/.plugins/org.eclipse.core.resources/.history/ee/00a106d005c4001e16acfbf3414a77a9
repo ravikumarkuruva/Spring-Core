@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="std1" class="com.app.student.Student">
+		<property name="clgName" value="Brindavan"></property>
+		<property name="stName" value="Ravi Kumar"></property>
+		<property name="rollNo" value="192N1A0411"></property>
+	</bean>
+	
+	<bean id="clg" class="com.app.college.College">
+		<property name="student" value="std1"></property>	
+		<property name="clgCode" value="BRNK"></property>	
+	</bean>
+</beans>

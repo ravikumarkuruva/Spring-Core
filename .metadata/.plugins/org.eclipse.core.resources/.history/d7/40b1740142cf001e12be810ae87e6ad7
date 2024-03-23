@@ -1,0 +1,33 @@
+package com.app.runners;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.app.runners.entity.Product;
+import com.app.runners.repo.ProductRepositary;
+@Component
+public class Runner implements CommandLineRunner {
+	
+	@Autowired
+	private ProductRepositary repo;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		repo.saveAll(
+				
+				Arrays.asList(
+								new Product(101,"Shirt","KNL",1,5,1000.0),
+								new Product(102,"pant","KNL",1,5,1000.0),
+								new Product(103,"Trouser","KNL",1,5,1000.0),
+								new Product(104,"T-Shirt","KNL",1,5,1000.0),
+								new Product(105,"Hoodie","KNL",1,5,1000.0)
+							 )
+			);
+		
+	}
+
+}

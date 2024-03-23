@@ -1,0 +1,37 @@
+my:
+  app:
+    driver: OracleDriver
+    pword: ravi
+    uname: ravi
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - prod
+      - prods
+my:
+  app:
+    driver: MySql
+    url: vs.uavvshud.
+    uname: root  
+    pword: root
+      
+---
+spring:
+  config:
+    activate:
+     on-profile:
+      - qa
+      - uat 
+my:
+  app:
+    driver: POSTGRESQL
+    url: wgv:ebh:ejhi:brvh
+    uname: System
+    pword: Manager     
+      
+
+    

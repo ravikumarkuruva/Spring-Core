@@ -1,0 +1,13 @@
+package com.app.runners.repo;
+
+
+
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+import com.app.runners.entity.Product;
+
+public interface ProductRepositary extends PagingAndSortingRepository<Product, Integer> {
+
+	
+
+}

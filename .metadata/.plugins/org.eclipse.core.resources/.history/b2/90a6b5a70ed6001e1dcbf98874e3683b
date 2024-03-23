@@ -1,0 +1,36 @@
+package com.app.runner.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.runner.entity.Student;
+import com.app.runner.service.IStudentService;
+
+@RestController
+@RequestMapping("/student")
+public class StudentController {
+	
+	@Autowired
+	IStudentService service;
+	
+	@GetMapping("/register")
+	public String showPage(Model model) {
+		
+		return "StudentRegister";
+	}
+	
+	@PostMapping("/save")
+	public String saveStudent(@ModelAttribute Student student, Model model) {
+		
+		Integer id=service.saveStudent(student);
+		String message ="Student '"+id+"' is Created...";
+		model.addAttribute("message", message);
+		return "StudentRegister";
+		
+	}
+}

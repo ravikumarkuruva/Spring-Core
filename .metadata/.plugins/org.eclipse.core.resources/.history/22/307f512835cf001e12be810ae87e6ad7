@@ -1,0 +1,19 @@
+package com.app.runners.entity;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Product {
+	private Integer pcode;
+	private String pname;
+	private String pplace;
+	private Integer pquantity;
+	private Integer prating;
+	private Double pprice;
+}

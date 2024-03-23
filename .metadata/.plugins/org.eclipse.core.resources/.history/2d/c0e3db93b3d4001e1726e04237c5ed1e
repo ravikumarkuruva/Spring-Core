@@ -1,0 +1,5 @@
+package com.app.runners.rest;
+
+public class UserController {
+
+}

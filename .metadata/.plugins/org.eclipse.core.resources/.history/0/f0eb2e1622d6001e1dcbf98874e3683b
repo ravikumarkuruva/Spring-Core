@@ -1,0 +1,24 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>Students Data</head>
+	<body>
+		<table>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>STREAM</th>
+			<th>COLLEGE NAME</th>
+			<th>FEEZ</th>
+			<th>
+				<a th:href="@/student/delete(id="${ob.id}")">DELETE</a>
+				<a th:href="@/student/edit(id="${ob.id}")">EDIT</a>
+			</th>
+			
+			<tr th:each="obj:${list}}">
+				<td>[[${obj.id}]]</td>
+				<td>[[${obj.name}]]</td>
+				<td>[[${obj.stream}]]</td>
+				<td>[[${obj.clgName}]]</td>
+				<td>[[${obj.feez}]]</td>
+			</tr>
+		</table>
+	</body>
+</html>

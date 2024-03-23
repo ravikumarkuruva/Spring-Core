@@ -1,0 +1,27 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+	<title>
+		WEB-App-4
+	</title>
+</head>
+
+<body>
+	<h1><u>BooksDetails</u></h1>
+
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+		<th>AUTHOR</th>
+		<th>PRICE</th>
+	</tr>
+	<tr th:each="obj:${list}">
+		<td th:text="${obj.id}"></td>
+		<td th:text="${obj.name}"></td>
+		<td th:text="${obj.author}"></td>
+		<td th:text="${obj.price}"></td>
+	</tr>
+
+</body>
+
+</html>

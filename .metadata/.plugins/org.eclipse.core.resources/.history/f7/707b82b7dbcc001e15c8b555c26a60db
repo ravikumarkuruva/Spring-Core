@@ -1,0 +1,11 @@
+datasource: ''
+ddl-auto: create
+formate_sql: true
+hibernate: ''
+jpa: ''
+password: ravi
+properties: ''
+show-sql: true
+spring: ''
+url: jdbc:oracle:thin:@localhost:1521:orcl
+username: ravi

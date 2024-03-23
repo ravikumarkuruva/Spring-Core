@@ -1,0 +1,19 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>Students Data</head>
+	<body>
+		<table>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>STREAM</th>
+			<th>COLLEGE NAME</th>
+			<th>FEEZ</th>
+			<tr th:each="obj:${list}}">
+				<td>${[[id]]}</td>
+				<td>${[[name]]}</td>
+				<td>${[[stream]]}</td>
+				<td>${[[clgName]]}</td>
+				<td>${[[feez]]}</td>
+			</tr>
+		</table>
+	</body>
+</html>

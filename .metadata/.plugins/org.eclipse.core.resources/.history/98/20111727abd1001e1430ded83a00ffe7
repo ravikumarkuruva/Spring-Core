@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>
+			WEB-App-4
+		</title>
+	</head>
+	<body>
+		<h1><u>BooksDetails</u></h1>
+		<p>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>AUTHOR</th>
+				<th>PRICE</th>
+			</tr>
+			<tr th:each="obj:${l1}">
+				<td th:text="${ob.id}"
+				<td th:text="${ob.name}"
+				<td th:text="${ob.author}"
+				<td th:text="${ob.price}"
+			</tr>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+package com.app.runners.restctrl;
+
+public class StudentController {
+
+}

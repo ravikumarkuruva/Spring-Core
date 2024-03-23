@@ -1,0 +1,16 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<title>WelCome To Student Registration...</title>
+	</head>
+	<body>
+		<h1><u>WelCome To Student Registration...</u></h1>
+		<form action="@{/employee/save}" method="post">
+			ID			:<input type="text" name="id"><br>
+			NAME		:<input type="text" name="id"><br>
+			STREAM		:<input type="text" name="id"><br>
+			COLLEGE NAME:<input type="text" name="id"><br>
+			FEEZ		:<input type="text" name="id"><br>
+			<input type="submit" value="Register">
+		</form>
+	</body>
+</html>

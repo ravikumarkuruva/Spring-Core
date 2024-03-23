@@ -1,0 +1,22 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<title>Welcome To Employee Registration Process</title>
+	</head>
+	<body>
+		<h1>
+			<u>Welcome To Employee Registration Process</u>
+		</h1>
+		<form action="save" method="post">
+			EmployeeId  :<input type="text" name="empId"><br>
+			EmployeeName:<input type="text" name="empName"><br>
+			Employeesal :<input type="text" name="empSal"><br>
+			Dept Of Employee :<select name="empDept">
+				<option type="DEV">DEV</option>
+				<option type="DEV">QA</option>
+				<option type="DEV">BA</option>
+			</select><br>
+			<input type="submit" value="Registor">
+		</form>
+		<div th:text="${message}"></div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+package com.app.runners.repo;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.app.runners.entity.Product;
+
+public interface ProductRepositary extends CrudRepository<Product, Integer> {
+
+}

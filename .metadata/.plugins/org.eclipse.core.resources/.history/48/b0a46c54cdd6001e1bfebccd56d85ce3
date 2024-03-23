@@ -1,0 +1,5 @@
+package com.app.runner.controller;
+
+public class PatientController {
+
+}

@@ -1,0 +1,44 @@
+package com.app.runner.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.app.runner.entity.Patient;
+import com.app.runner.repo.PatientRepository;
+import com.app.runner.service.IPatientService;
+
+public class PatientServiceImpl implements IPatientService {
+	@Autowired
+	private PatientRepository repo;
+	
+	public Integer savePatient(Patient p) {
+		 p=repo.save(p);
+		return p;
+	}
+
+	
+	public void getOnePatient(Integer id) {
+		
+
+	}
+
+	
+	public void updatePatient(Patient p) {
+		
+
+	}
+
+	
+	public Integer deletePatient(Integer id) {
+		
+		return null;
+	}
+
+	
+	public List<Patient> getAllPatients() {
+		
+		return null;
+	}
+
+}

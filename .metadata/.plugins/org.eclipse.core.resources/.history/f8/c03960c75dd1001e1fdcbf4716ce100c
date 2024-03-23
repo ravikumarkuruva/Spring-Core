@@ -1,0 +1,29 @@
+package com.app.runners.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.app.runners.bean.Employee;
+
+import ch.qos.logback.core.model.Model;
+
+@Controller
+@RequestMapping("/emp")
+public class EmployeeController {
+	@GetMapping("/show")
+	public String showCase() {
+		
+		return "UserRegistor";
+	}
+	@PostMapping("/register")
+	public String readData(	@ModelAttribute Employee employee, Model model) {
+		
+		System.out.println(employee);
+		//model.addAttribute("obj", employee);
+		return "EmpData";
+		
+	}
+}

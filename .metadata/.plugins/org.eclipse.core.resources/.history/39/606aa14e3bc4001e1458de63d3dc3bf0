@@ -1,0 +1,22 @@
+package com.app.main;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+//@Component
+@Configuration
+public class Config {
+	
+	@Bean
+	public Sample m1() {
+		Sample s1=new Sample();
+		return s1;
+	}
+
+	@Bean
+	public Sample m2() {
+		Sample s1=new Sample();
+		return s1;
+	}
+}

@@ -1,0 +1,22 @@
+package com.app.runners.entity;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/user")
+public class User {
+	@PostMapping("/find")
+	public ResponseEntity<String> readId(
+		@RequestParam("pid")Integer id,
+		@RequestParam("name")String name
+			){
+		ResponseEntity<String> response=new ResponseEntity("PID "+id+" NAME "+name,HttpStatus.OK);
+				return response;
+		
+	}
+}

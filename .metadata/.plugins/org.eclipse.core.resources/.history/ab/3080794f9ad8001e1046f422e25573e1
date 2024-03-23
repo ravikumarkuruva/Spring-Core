@@ -1,0 +1,36 @@
+package com.app.runner.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.app.runner.entity.Children;
+import com.app.runner.repo.ChildrenRepo;
+import com.app.runner.service.IChildrenService;
+@Service
+public class ChildrenServiceImpl implements IChildrenService {
+	@Autowired
+	ChildrenRepo repo;
+	
+	public Integer saveChild(Children c) {
+		repo.save(c);
+		return c.getId();
+	}
+
+	
+	public void deleteChild(Integer id) {
+		repo.deleteById(id);
+
+	}
+
+	
+	public void updateChild(Children c) {
+		
+	}
+
+	
+	public Children getChildById(Integer id) {
+		
+		return repo.findById(id);
+	}
+
+}

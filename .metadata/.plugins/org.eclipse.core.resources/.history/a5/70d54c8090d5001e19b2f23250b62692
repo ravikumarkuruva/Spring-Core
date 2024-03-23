@@ -1,0 +1,14 @@
+package com.app.runner.exception;
+
+public class UserNotFoundException extends RuntimeException{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	UserNotFoundException(){
+		super();
+	}
+	UserNotFoundException(String message){
+		super(message);
+	}
+}

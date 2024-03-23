@@ -1,0 +1,17 @@
+package com.app.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("resource")
+		ApplicationContext ac=new 
+				AnnotationConfigApplicationContext(MyConfig.class);
+		Object s1=(Sample)ac.getBean("config");
+		System.out.println(s1);
+	}
+
+}

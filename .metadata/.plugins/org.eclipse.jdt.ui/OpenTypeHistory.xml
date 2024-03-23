@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=SpringBootQMT/C:\/Users\/Dell\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.2.2\/spring-data-jpa-3.2.2.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.2.2=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1705054045000"/>
+    <typeInfo handle="=StudentMiniProject-01/C:\/Users\/Dell\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.2.3\/spring-data-jpa-3.2.3.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.2.3=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1708089150000"/>
+    <typeInfo handle="=StudentMiniProject-01/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.app.runner.service{IStudentService.java[IStudentService" modifiers="513" timestamp="1709100450369"/>
+</typeInfoHistroy>

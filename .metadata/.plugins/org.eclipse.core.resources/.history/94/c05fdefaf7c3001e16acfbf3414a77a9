@@ -1,0 +1,11 @@
+package com.db.conn;
+
+public class DataBaseCon {
+	
+	private String driver;
+	private String url;
+	private String username;
+	private String password;
+
+
+}

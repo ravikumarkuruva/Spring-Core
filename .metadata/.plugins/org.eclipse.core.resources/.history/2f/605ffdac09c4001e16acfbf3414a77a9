@@ -1,0 +1,21 @@
+package com.app.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+import com.app.dbinfo.DBInfo;
+
+public class Test {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		ApplicationContext ac=new AnnotationConfigApplicationContext();
+		 ((AnnotationConfigApplicationContext) ac).scan("com.app");
+		 ((AbstractApplicationContext) ac).refresh();
+		 
+		 DBInfo dbinfo=ac.getBean("dBInfo", DBInfo.class);
+		 System.out.println(dbinfo);
+	}
+
+}

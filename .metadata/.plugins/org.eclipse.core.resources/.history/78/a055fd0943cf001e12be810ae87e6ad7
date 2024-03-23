@@ -1,0 +1,8 @@
+spring.datasource.url=jdbc:orale:thin:2localhost:1521:orcl
+spring.datasource.username=ravi
+spring.datasource.password=ravi
+
+spring.jpa.database-platform=org.hibernate.dialect.OracleDialect
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.formate_sql=true

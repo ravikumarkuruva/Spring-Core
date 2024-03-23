@@ -1,0 +1,11 @@
+package com.app.runners.repo;
+
+
+
+import com.app.runners.entity.Product;
+
+public interface ProductRepositary extends JpaRepository<Product, Integer> {
+
+	
+
+}

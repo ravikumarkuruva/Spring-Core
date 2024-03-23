@@ -1,0 +1,18 @@
+package com.app.test;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.dbinfo.DBConnection;
+
+public class Test {
+
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext ac=new AnnotationConfigApplicationContext();
+		ac.scan("com.app");
+		ac.refresh();
+		
+		DBConnection dbcon=ac.getBean("dBConnection",DBConnection);
+
+	}
+
+}
